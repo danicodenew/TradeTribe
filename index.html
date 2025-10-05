@@ -622,48 +622,6 @@
             border-top: 1px solid var(--border-color);
         }
 
-            /* Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .hero-stats {
-                flex-direction: column;
-                gap: 2rem;
-            }
-
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .trader-row {
-                grid-template-columns: 40px 1fr;
-                gap: 1rem;
-                padding: 1rem;
-            }
-
-            .trader-stat {
-                display: none;
-            }
-
-            .trader-row.header {
-                display: none;
-            }
-        }
-
         /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
@@ -683,6 +641,421 @@
 
         .animate-fade-in {
             animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 1200px) {
+            .nav-container {
+                padding: 1rem 1.5rem;
+            }
+
+            .hero {
+                padding: 10rem 1.5rem 6rem;
+            }
+
+            section {
+                padding: 5rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .services-grid, .features-grid, .process-steps {
+                gap: 2rem;
+            }
+
+            .contact-container {
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-container {
+                padding: 1rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .cta-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                padding: 8rem 1rem 5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 2rem;
+                margin-top: 3rem;
+            }
+
+            .hero-stats .stat-number {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 4rem 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .services-grid, .features-grid, .process-steps {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .service-card, .process-step {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            /* Mobile Traders Table - Card Layout */
+            .traders-table {
+                background: transparent;
+                border: none;
+            }
+
+            .trader-row.header {
+                display: none;
+            }
+
+            .trader-row {
+                display: block;
+                background: var(--card-bg);
+                border: 1px solid var(--border-color);
+                border-radius: 12px;
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+                position: relative;
+            }
+
+            .trader-row:hover {
+                background: var(--card-bg);
+            }
+
+            .trader-rank {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                font-size: 1.8rem;
+            }
+
+            .trader-info {
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                gap: 0.5rem;
+            }
+
+            .trader-avatar {
+                width: 80px;
+                height: 80px;
+                margin: 0 auto;
+            }
+
+            .trader-details {
+                height: auto;
+                padding-bottom: 0;
+                padding-top: 0;
+            }
+
+            .trader-details h4 {
+                font-size: 1.2rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .trader-details p {
+                font-size: 0.9rem;
+            }
+
+            .trader-stat {
+                display: inline-block;
+                width: 48%;
+                text-align: center;
+                padding: 1rem 0;
+            }
+
+            .trader-stat:first-of-type {
+                border-right: 1px solid var(--border-color);
+            }
+
+            .stat-value {
+                font-size: 1.3rem;
+                margin-bottom: 0.3rem;
+            }
+
+            .stat-sublabel {
+                font-size: 0.85rem;
+            }
+
+            .trader-row.blurred {
+                filter: blur(3px);
+            }
+
+            .crypto-ticker {
+                padding: 1.5rem 0;
+            }
+
+            .ticker-item img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .crypto-symbol {
+                font-size: 1.2rem;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                margin-bottom: 3rem;
+            }
+
+            .services-grid, .features-grid, .process-steps {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .service-card, .process-step {
+                padding: 2rem 1rem;
+            }
+
+            .service-icon {
+                font-size: 2.5rem;
+            }
+
+            .feature-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+
+            .contact-info {
+                gap: 1.5rem;
+            }
+
+            .contact-item {
+                padding: 1.5rem;
+            }
+
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+
+            .top-traders {
+                max-width: 100%;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+            .traders-table {
+                border-radius: 8px;
+            }
+
+            .trader-row {
+                padding: 1.2rem;
+            }
+
+            .trader-rank {
+                font-size: 1.5rem;
+                top: 0.8rem;
+                right: 0.8rem;
+            }
+
+            .trader-avatar {
+                width: 70px;
+                height: 70px;
+            }
+
+            .trader-details h4 {
+                font-size: 1.1rem;
+            }
+
+            .trader-details p {
+                font-size: 0.85rem;
+            }
+
+            .ticker-track {
+                gap: 3rem;
+            }
+
+            .footer-content {
+                padding: 2rem 1rem;
+            }
+
+            .telegram-contact span {
+                font-size: 0.9rem;
+            }
+
+            .copyright {
+                font-size: 0.8rem;
+            }
+
+            .view-all-btn {
+                padding: 0.9rem 2rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .hero {
+                padding: 6rem 0.5rem 4rem;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .stat-number {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .service-card h3, .feature-item h3 {
+                font-size: 1.2rem;
+            }
+
+            .contact-item h3 {
+                font-size: 1.1rem;
+            }
+
+            .top-traders {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+            .trader-row {
+                padding: 1rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .trader-rank {
+                font-size: 1.3rem;
+                top: 0.7rem;
+                right: 0.7rem;
+            }
+
+            .trader-avatar {
+                width: 60px;
+                height: 60px;
+            }
+
+            .trader-details h4 {
+                font-size: 1rem;
+            }
+
+            .trader-details p {
+                font-size: 0.8rem;
+            }
+
+            .trader-stat {
+                padding: 0.8rem 0;
+            }
+
+            .stat-value {
+                font-size: 1.1rem;
+            }
+
+            .stat-sublabel {
+                font-size: 0.75rem;
+            }
+
+            .ticker-item img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .crypto-symbol {
+                font-size: 1rem;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .cta-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
@@ -772,7 +1145,7 @@
                     <div class="trader-row">
                         <div class="trader-rank">1</div>
                         <div class="trader-info">
-                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=top1" alt="Zhang Lei" class="trader-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Zhang Lei" class="trader-avatar">
                             <div class="trader-details" style="padding-top: 45px">
                                 <h4>Zhang Lei</h4>
                                 <p>Algorithmic Trading Specialist</p>
@@ -791,7 +1164,7 @@
                     <div class="trader-row">
                         <div class="trader-rank">2</div>
                         <div class="trader-info">
-                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=top2" alt="Katarina Novak" class="trader-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Katarina Novak" class="trader-avatar">
                             <div class="trader-details" style="padding-top: 45px">
                                 <h4>Katarina Novak</h4>
                                 <p>DeFi & Futures Expert</p>
@@ -810,7 +1183,7 @@
                     <div class="trader-row">
                         <div class="trader-rank">3</div>
                         <div class="trader-info">
-                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=top3" alt="Tariq Mansoor" class="trader-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Tariq Mansoor" class="trader-avatar">
                             <div class="trader-details" style="padding-top: 45px;">
                                 <h4>Tariq Mansoor</h4>
                                 <p>Swing Trading Master</p>
@@ -829,7 +1202,7 @@
                     <div class="trader-row blurred">
                         <div class="trader-rank">4</div>
                         <div class="trader-info">
-                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=elenarodriguez" alt="Elena Rodriguez" class="trader-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Elena Rodriguez" class="trader-avatar">
                             <div class="trader-details" style="padding-top: 40px;">
                                 <h4>Elena Rodriguez</h4>
                                 <p>Arbitrage Specialist</p>
@@ -848,7 +1221,7 @@
                     <div class="trader-row blurred">
                         <div class="trader-rank">5</div>
                         <div class="trader-info">
-                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=jamespark" alt="James Park" class="trader-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="James Park" class="trader-avatar">
                             <div class="trader-details" style="padding-top: 40px;">
                                 <h4>James Park</h4>
                                 <p>Options Trading Pro</p>
